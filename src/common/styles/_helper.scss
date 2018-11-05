@@ -1,0 +1,89 @@
+.highlight-caption {
+  color: $color__primary__title;
+}
+
+.session-title {
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 40px;
+  text-align: center;
+  color: #000;
+  text-transform: capitalize;
+  position: relative;
+  margin: 50px auto;
+  width: max-content;
+}
+
+.session-title::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  bottom: 0;
+  left: 25%;
+  border-bottom: 1px solid $color__primary__title;
+}
+
+.icon-color {
+  color: $color__primary__subtitle;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.grey-text {
+  color: $color__light__white;
+}
+
+.small-spacing {
+  letter-spacing: $spacing-small;
+}
+
+@media (max-width: 1200px) {
+  .courses-left .course-icon {
+    position: absolute!important;
+    left: -10%!important;
+    top: 35%!important;
+  }
+  .courses-left .course-icon i {
+    top: 26%!important;
+  }
+  .courses-right .course-icon {
+    position: absolute!important;
+    top: 35%!important;
+  }
+  .courses-right .course-icon i {
+    top: 26%!important;
+  }
+}
+
+@media (max-width: 996px) {
+  .achievement-container {
+    margin-top: 580px!important;
+  }
+  .mobile-hiding {
+    display: none!important;
+  }
+}
+
+@media (max-width: 769px) {
+  .achievement-container {
+    margin-top: 580px!important;
+  }
+  .banner {
+    height: 90vw!important;
+  }
+  .course-icon {
+    display: none!important;
+  }
+  .session-title {
+    width: 100%!important;
+  }
+}
+
+@media (max-width: 500px) {
+  .achievement-container {
+    margin-top: 700px!important;
+  }
+}

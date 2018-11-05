@@ -1,0 +1,304 @@
+@import "../../common/styles/_variables.scss";
+@import "../../common/styles/_colors.scss";
+@import "../../common/styles/_helper.scss";
+
+.homepage-container {
+  background-color: $color__light__grey;
+  .header-container {
+    background-color: $color__light__grey;
+    .first-navbar {
+      padding: 10px 0;
+      background-color: $color__primary__background;
+      color: $color__white;
+      .email {
+        letter-spacing: 1px;
+        font-size: $font-size-default;
+        margin: 0 10px;
+      }
+      .social {
+        float: right;
+        li {
+          display: inline-block;
+        }
+        li i {
+          font-size: $font-size-default;
+          line-height: 29px;
+          width: 30px;
+          height: 30px;
+          margin: 0 10px;
+        }
+      }
+    }
+    .second-navbar {
+      .logo {
+        font-size: $font-size-large;
+        font-weight: bold;
+      }
+      ul li {
+        font-size: $font-size-default;
+        font-weight: bold;
+        font-size: $font-size-default;
+        margin-right: 16px;
+        a {
+          color: $color__black !important;
+        }
+      }
+      ul li:hover {
+        border-bottom: 1px solid $color__primary__title;
+      }
+    }
+  }
+  .banner {
+    height: 45vw;
+    background: url("../../assets/bg1.jpg");
+    background-size: cover;
+    position: relative;
+    .banner-title {
+      font-size: 2.8em;
+      font-weight: bold;
+      text-shadow: 3px 1px 1px $color__black;
+      letter-spacing: 2px;
+      color: $color__white;
+    }
+    .offer-banner {
+      position: absolute;
+      background-color: $color__white;
+      top: 60%;
+      box-shadow: -3px 0px 15px 1px rgba(0, 0, 0, 0.08);
+      // Define new variable for rgba
+      .offer-container {
+        i {
+          font-size: $font-size-large;
+        }
+      }
+    }
+  }
+  .achievement-container {
+    position: relative;
+    margin-top: 300px;
+    padding-bottom: 100px;
+    .achieve-container {
+      .counter {
+        font-size: 50px;
+        font-weight: 500;
+      }
+      .achieve {
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+  }
+  .education-container {
+    position: relative;
+    background: url("../../assets/bg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: auto;
+    color: $color__white;
+    .middle-guy {
+      position: relative;
+      top: -94px;
+      max-width: 100%;
+      height: auto;
+    }
+    i {
+      font-size: $font-size-large;
+      border: 2px solid $color__white;
+      padding: 10px;
+    }
+  }
+  .courses-container {
+    position: relative;
+    .courses-left {
+      .course-container {
+        position: relative;
+        .course-info {
+          width: 300px;
+          box-sizing: border-box;
+          padding: 30px;
+          border: 1px solid;
+          box-shadow: -3px 0px 15px 1px rgba(0, 0, 0, 0.08);
+        }
+        div {
+          display: inline-block;
+        }
+        .course-icon {
+          background-color: $color__primary__text;
+          width: 50px;
+          height: 50px;
+          border-radius: 50px 0px 0px 50px;
+          i {
+            position: absolute;
+            left: 20px;
+            top: 48px;
+            font-size: 25px;
+            color: $color__white;
+          }
+        }
+      }
+    }
+    .courses-right {
+      .course-container {
+        position: relative;
+        .course-info {
+          width: 300px;
+          box-sizing: border-box;
+          padding: 30px;
+          border: 1px solid;
+          box-shadow: 1px 0px 3px 1px rgba(0, 0, 0, 0.18);
+        }
+        div {
+          display: inline-block;
+        }
+        .course-icon {
+          background-color: $color__primary__text;
+          width: 50px;
+          height: 50px;
+          border-radius: 0px 50px 50px 0px;
+          i {
+            position: absolute;
+            right: 21px;
+            top: 48px;
+            font-size: 25px;
+            color: $color__white;
+          }
+        }
+      }
+    }
+  }
+  .feedback-container {
+    position: relative;
+    background: url("../../assets/bg3.jpg");
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    .session-title {
+      color: $color__white;
+    }
+    .review-container {
+      display: block;
+      .my-tooltip {
+        position: relative;
+        background-color: $color__white;
+        padding: 1em 4em;
+        width: 500px;
+        color: $color__grey;
+        ::after {
+          content: "";
+          position: absolute;
+          left: 7%;
+          bottom: -8%;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-bottom: 15px solid $color__white;
+          -webkit-transform: rotate(178deg);
+        }
+      }
+      .review-person {
+        img {
+          border-radius: 50%;
+        }
+        .review-info {
+          display: inline-block;
+          position: relative;
+          top: 1.6em;
+          left: 1em;
+          h3 {
+            color: #fb2c92;
+          }
+        }
+      }
+    }
+    .seima-controler {
+      position: absolute;
+      width: 100%;
+      button {
+        border: none;
+        background: transparent;
+      }
+    }
+  }
+  .about-container {
+    img {
+      width: 540px;
+      height: 370px;
+    }
+    .course-detail-container {
+      font-size: $font-size-default;
+      color: $color__grey;
+      letter-spacing: 0.5;
+      .course-title {
+        font-size: $font-size-large;
+        font-weight: bold;
+      }
+    }
+  }
+  .footer-container {
+    position: relative;
+    color: $color__grey;
+    .first-footer {
+      background-color: #0e0f10;
+      color: $color__grey;
+      height: auto;
+      h3 {
+        color: $color__white;
+        font-weight: bold;
+      }
+      ul li {
+        list-style-type: none;
+        margin-bottom: 0.5em;
+      }
+      form {
+        input {
+          position: relative;
+          top: -4px;
+          background: transparent;
+          border: 0.3px solid $color__light__grey;
+          height: 3em;
+        }
+        button {
+          background-color: $color__primary__background;
+          color: $color__white;
+          border: none;
+          height: 1.5em;
+          width: 2em;
+          font-size: $font-size-large;
+          i {
+            position: relative;
+            top: 5px
+          }
+        }
+      }
+    }
+    .second-footer {
+      background-color: #141415;
+      padding: 1em 0;
+      color: $color__white;
+      .copyright {
+        margin: 8px 0
+      }
+      h5 {
+        display: inline-block;
+        margin-bottom: 0;
+      }
+      .social {
+        float: right;
+        li {
+          display: inline-block;
+        }
+        li i {
+          font-size: $font-size-default;
+          text-align: center;
+          line-height: 29px;
+          width: 30px;
+          height: 30px;
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+}
